@@ -1,7 +1,12 @@
+import Socials from '../../components/SocialsComponent'
+
 export default function Home() {
   return (
-    <div className="text-3xl font-bold text-center justify-center">
-      ImSoloH Website Coming Soon!
+    <div>
+      <div className="flex justify-center text-5xl font-bold text-center">
+        SoloH
+      </div>
+      <Socials />
     </div>
   )
 }

@@ -1,7 +1,9 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold">
-      I&apos;mSoloH Website Coming Soon!
-    </h1>
+    <div className="text-3xl font-bold text-center justify-center bg-hero">
+      ImSoloH Website Coming Soon!
+    </div>
   )
 }

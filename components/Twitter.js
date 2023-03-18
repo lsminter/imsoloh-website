@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export default function TwitterComponent () {
   return (
     <div className='max-w-xs'>
-      <a href='https://www.youtube.com/@imsoloh'>
+      <a href='https://twitter.com/imsoloh'>
         <div className="flex justify-center">
           <motion.div className="grid place-items-center grid-cols-4 gap-4 text-center border-solid border-2 border-twitter-blue p-4 min-w-min" whileHover={{
             scale: .9,

@@ -11,9 +11,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('/images/LarransKeyThumbnail1.png')",
+        'hero': "url('https://res.cloudinary.com/dgjsveger/image/upload/v1679159440/mv147or5vwoi9iyfxo6x.png')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // require('tailwindcss-bg-image')
+  ],
 }

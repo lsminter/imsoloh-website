@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 
 export default function TwitchComponent () {
   return (
-    <div className='max-w-xs'>
+    <div>
       <a href='https://www.twitch.tv/imsoloh'>
         <div className="flex justify-center">
-          <motion.div className="grid place-items-center grid-cols-4 gap-4 text-center border-solid border-2 border-twitch-purple p-4 min-w-min" whileHover={{
+          <motion.div className="grid place-items-center grid-cols-4 gap-4 text-center border-solid border-2 border-twitch-purple p-4" whileHover={{
             scale: .9,
             borderColor:'#9BBEBD',
             transition: {

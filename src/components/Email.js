@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 export default function EmailComponent () {
   return (
-    <div className='max-w-xs'>
+    <div>
       <a href='mailto:imsoloh12@gmail.com'>
         <div className="flex justify-center">
           <motion.div className="grid place-items-center grid-cols-4 gap-4 text-center border-solid border-2 border-white p-4 min-w-min" whileHover={{

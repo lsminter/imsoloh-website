@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('https://res.cloudinary.com/dgjsveger/image/upload/v1679159440/mv147or5vwoi9iyfxo6x.png')",
+        'hero': "url('https://res.cloudinary.com/dgjsveger/image/upload/v1679159440/SoloH%20Website/mv147or5vwoi9iyfxo6x.png')",
       },
       colors: {
         'youtube-red': '#FA5252',

@@ -1,4 +1,4 @@
-import Socials from '../../components/SocialsComponent'
+import Socials from '../components/SocialsComponent'
 
 export default function Home() {
   return (

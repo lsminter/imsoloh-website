@@ -6,6 +6,7 @@ export default function Layout ({ children }){
           autoPlay
           loop
           muted
+          playsInline
           className="min-w-full min-h-full absolute object-cover"
         >
           <source src="https://res.cloudinary.com/dgjsveger/video/upload/v1679344768/background-video_ivcz7m.mp4" type="video/mp4"/>

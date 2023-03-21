@@ -1,17 +1,12 @@
 import localFont from '@next/font/local'
 
 const osrs = localFont({
-  src: [
-    {
-      path: '../../public/fonts/runescape_chat_font.ttf',
-      weight: '400'
-    }
-  ],
+  src: '../../public/fonts/runescape_chat_font.ttf'
 })
 
 export default function Layout ({ children }){
   return (
-    <div className={`flex h-full ${osrs.className} font-sans`}>
+    <div className={`flex h-full ${osrs.className}`}>
       <div className="bg-center bg-cover bg-no-repeat z-0">
         <video
           autoPlay

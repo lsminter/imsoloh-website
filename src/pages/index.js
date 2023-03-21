@@ -8,10 +8,10 @@ export default function Home() {
         SoloH
       </div>
       <Socials />
-      <div className="text-center text-3xl mb-4">
+      {/* <div className="text-center text-3xl mb-4">
         Latest YouTube Video
       </div>
-      <YouTubeVideo />
+      <YouTubeVideo /> */}
     </div>
   )
 }

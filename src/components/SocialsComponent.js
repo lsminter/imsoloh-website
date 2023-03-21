@@ -1,7 +1,7 @@
-import YouTubeComponent from './Youtube.js'
-import TwitchComponent from './Twitch.js'
-import TwitterComponent from './Twitter.js'
-import EmailComponent from './Email.js'
+import YouTubeComponent from './SocialsComponents/Youtube.js'
+import TwitchComponent from './SocialsComponents/Twitch.js'
+import TwitterComponent from './SocialsComponents/Twitter.js'
+import EmailComponent from './SocialsComponents/Email.js'
 
 export default function Socials ({ children }){
   return (

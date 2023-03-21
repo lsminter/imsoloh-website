@@ -17,10 +17,8 @@ module.exports = {
         'youtube-red': '#FA5252',
         'twitch-purple': '#6441A4',
         'twitter-blue': '#03A9F4'
-      }
+      },
     },
   },
-  plugins: [
-    // require('tailwindcss-bg-image')
-  ],
+  plugins: [],
 }

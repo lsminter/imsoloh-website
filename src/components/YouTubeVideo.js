@@ -1,18 +1,33 @@
 import { useState, useEffect } from 'react'
+import axios from 'axios'; 
 
 export default function YouTubeVideo() {
   const [videoData, setVideoData] = useState(null)
-  const { API_KEY, CHANNEL_ID } = process.env
 
   useEffect(() => {
     async function fetchVideoData() {
-      const response = await fetch(`/api/youtube?channelID=${CHANNEL_ID}&apiKey=${API_KEY}`)
-      const data = await response.json()
-      setVideoData(data.items[0])
+      try {
+        const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
+          params: {
+            part: 'snippet',
+            channelId: process.env.NEXT_PUBLIC_CHANNEL_ID,
+            maxResults: 1,
+            order: 'date',
+            type: 'video',
+            key: process.env.NEXT_PUBLIC_API_KEY,
+          },
+        });
+        if (response.data.items && response.data.items.length > 0) {
+          setVideoData(response.data.items[0]);
+        }
+      } catch (error) {
+        console.error(error);
+      }
     }
 
-    fetchVideoData()
-  }, [CHANNEL_ID, API_KEY])
+    fetchVideoData();
+  });
+
 
   return (
     <div className="flex justify-center items-center">

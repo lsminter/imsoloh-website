@@ -4,21 +4,29 @@ import axios from 'axios';
 export default function YouTubeVideo() {
   const [videoData, setVideoData] = useState(null)
 
-  async function fetchVideoData() {
-    try {
-      const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${process.env.NEXT_PUBLIC_CHANNEL_ID}&maxResults=1&order=date&type=video&key=${process.env.NEXT_PUBLIC_API_KEY}`
-      );
-      const data = await response.json();
-      if (data.items && data.items.length > 0) {
-        setVideoData(data.items[0]);
+  useEffect(() => {
+    async function fetchVideoData() {
+      try {
+        const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
+          params: {
+            part: 'snippet',
+            channelId: `${process.env.CHANNEL_ID}`,
+            maxResults: 1,
+            order: 'date',
+            type: 'video',
+            key: `${process.env.API_KEY}`,
+          },
+        });
+        if (response.data.items && response.data.items.length > 0) {
+          setVideoData(response.data.items[0]);
+        }
+      } catch (error) {
+        console.error(error);
       }
-    } catch (error) {
-      console.error(error);
     }
-  }
 
-  fetchVideoData();
+    fetchVideoData();
+  });
 
 
   return (

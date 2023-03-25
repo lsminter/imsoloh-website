@@ -10,11 +10,11 @@ export default function YouTubeVideo() {
         const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
           params: {
             part: 'snippet',
-            channelId: `${process.env.CHANNEL_ID}`,
+            channelId: `${process.env.NEXT_PUBLIC_CHANNEL_ID}`,
             maxResults: 1,
             order: 'date',
             type: 'video',
-            key: `${process.env.API_KEY}`,
+            key: `${process.env.NEXT_PUBLIC_API_KEY}`,
           },
         });
         if (response.data.items && response.data.items.length > 0) {

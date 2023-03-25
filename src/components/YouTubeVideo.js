@@ -6,7 +6,7 @@ export default function YouTubeVideo() {
 
   useEffect(() => {
     const fetchVideo = async () => {
-      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${NEXT_PUBLIC_CHANNEL_ID}&maxResults=1&order=date&type=video&key=${NEXT_PUBLIC_API_KEY}`;
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${process.env.NEXT_PUBLIC_CHANNEL_ID}&maxResults=1&order=date&type=video&key=${process.env.NEXT_PUBLIC_API_KEY}`;
 
       const response = await fetch(url);
 

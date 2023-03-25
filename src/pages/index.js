@@ -3,12 +3,12 @@ import TwitchLiveStatus from '../components/TwitchLiveStatus'
 import YouTubeVideo from '../components/YouTubeVideo'
 
 export default function Home() {
-  let recentYouTubeVideo;
-  if(process.env.NODE_ENV === "production"){
-    recentYouTubeVideo = <YouTubeVideo />
-  } else {
-    recentYouTubeVideo = <div className="w-[560px] h-[315px] bg-white" />
-  }
+  // let recentYouTubeVideo;
+  // if(process.env.NODE_ENV === "production"){
+  //   recentYouTubeVideo = <YouTubeVideo />
+  // } else {
+  //   recentYouTubeVideo = <div className="w-[560px] h-[315px] bg-white" />
+  // }
 
   return (
     <div className="p-10">
@@ -19,9 +19,7 @@ export default function Home() {
       <div className="text-center text-3xl mb-4">
         Latest YouTube Video
       </div>
-      <div className="flex justify-center">
-        {recentYouTubeVideo}
-      </div>
+      <YouTubeVideo />
       {/* <TwitchLiveStatus /> */}
     </div>
   )

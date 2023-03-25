@@ -4,7 +4,7 @@ import YouTubeVideo from '../components/YouTubeVideo'
 
 export default function Home() {
   let recentYouTubeVideo;
-  if(process.env.NODE_ENV === "dev"){
+  if(process.env.NODE_ENV === "production"){
     recentYouTubeVideo = <YouTubeVideo />
   } else {
     recentYouTubeVideo = <div className="w-[560px] h-[315px] bg-white" />

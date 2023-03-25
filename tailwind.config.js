@@ -18,6 +18,9 @@ module.exports = {
         'twitch-purple': '#6441A4',
         'twitter-blue': '#03A9F4'
       },
+      width: {
+        'live': '460px'
+      }
     },
   },
   plugins: [],

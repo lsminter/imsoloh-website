@@ -2,6 +2,7 @@ import YouTubeComponent from './SocialsComponents/Youtube.js'
 import TwitchComponent from './SocialsComponents/Twitch.js'
 import TwitterComponent from './SocialsComponents/Twitter.js'
 import EmailComponent from './SocialsComponents/Email.js'
+import TwitchLiveStatus from './TwitchLiveStatus.js'
 
 export default function Socials ({ children }){
   return (
@@ -17,6 +18,9 @@ export default function Socials ({ children }){
       </div>
       <div className='flex justify-center mt-5'>
         <EmailComponent />
+      </div>
+      <div className='flex justify-center mt-5'>
+      <TwitchLiveStatus />
       </div>
     </div>
   )

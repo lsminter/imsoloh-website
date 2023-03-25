@@ -1,5 +1,4 @@
 import Socials from '../components/SocialsComponent'
-import TwitchLiveStatus from '../components/TwitchLiveStatus'
 import YouTubeVideo from '../components/YouTubeVideo'
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
       <div className="flex justify-center">
         {recentYouTubeVideo}
       </div>
-      {/* <TwitchLiveStatus /> */}
     </div>
   )
 }

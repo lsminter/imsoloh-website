@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'; 
 
 export default function YouTubeVideo() {
   const [videoData, setVideoData] = useState(null)

@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import Layout from '../components/Layout'
+import Footer from '../components/Footer.js'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -7,6 +8,7 @@ export default function App({ Component, pageProps }) {
     <div className="h-screen bg-center bg-cover bg-no-repeat bg-hero">
       <Layout>
         <Component {...pageProps} />
+      <Footer />
       </Layout>
     </div>
   ) 

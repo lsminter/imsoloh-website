@@ -12,7 +12,7 @@ export default function YouTubeVideo() {
 
       if (response.ok) {
         const data = await response.json();
-        setVideo(data.items[0]);
+        setVideoData(data.items[0]);
       }
     };
 

@@ -20,7 +20,7 @@ export default function Socials ({ children }){
         <EmailComponent />
       </div>
       <div className='flex justify-center mt-5'>
-      <TwitchLiveStatus />
+        <TwitchLiveStatus />
       </div>
     </div>
   )

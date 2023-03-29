@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer.js'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       <Footer />
       </Layout>
+      <Analytics />
     </div>
   ) 
 }

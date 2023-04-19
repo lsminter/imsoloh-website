@@ -8,7 +8,7 @@ const TwitchLiveStatus = () => {
     const fetchStream = async () => {
       const response = await axios.post(`https://id.twitch.tv/oauth2/token?client_id=${process.env.NEXT_PUBLIC_CLIENT_ID}&client_secret=${process.env.NEXT_PUBLIC_CLIENT_SECRET}&grant_type=client_credentials`)
       const bearerToken = response.data.access_token
-      const getStream = await axios.get(`https://api.twitch.tv/helix/streams?user_login=soloh`, {
+      const getStream = await axios.get(`https://api.twitch.tv/helix/streams?user_login=imsoloh`, {
         headers: {
           Authorization: `Bearer ${bearerToken}`, 
           'Client-ID': process.env.NEXT_PUBLIC_CLIENT_ID,

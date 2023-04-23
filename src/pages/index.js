@@ -6,7 +6,7 @@ export default function Home() {
   if (process.env.NODE_ENV === "production"){
     recentYouTubeVideo = <YouTubeVideo />
   } else {
-    recentYouTubeVideo = <div className="w-[560px] h-[315px] bg-white" />
+    recentYouTubeVideo = <div className="flex justify-center w-[560px] h-[315px] bg-white" />
   }
 
   return (

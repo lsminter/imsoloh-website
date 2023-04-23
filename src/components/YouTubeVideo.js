@@ -29,7 +29,8 @@ export default function YouTubeVideo() {
           title={videoData.snippet.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+          className="flex"
+        />
       ) : (
         <p>Loading...</p>
       )}

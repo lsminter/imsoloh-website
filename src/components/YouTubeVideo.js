@@ -23,13 +23,11 @@ export default function YouTubeVideo() {
     <div className="flex justify-center items-center">
       {videoData ? (
         <iframe
-          width="560"
-          height="315"
           src={`https://www.youtube.com/embed/${videoData.id.videoId}`}
           title={videoData.snippet.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          className="flex"
+          className="flex max-w-[560px] max-h-[315px]"
         />
       ) : (
         <p>Loading...</p>

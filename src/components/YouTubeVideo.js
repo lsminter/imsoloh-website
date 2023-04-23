@@ -22,7 +22,7 @@ export default function YouTubeVideo() {
   return (
     <div className="flex justify-center items-center">
       {videoData ? (
-        <div className="w-[560px] h-[315px]">
+        <div className="flex w-[560px] h-[315px]">
           <iframe
             width="100%"
             height="100%"
